@@ -1,0 +1,16 @@
+{% extends "pages/_base.jinja" %}
+
+{% block content %}
+
+<h1>Page for thing No. {{ id }}</h1>
+<p>We have got this id from the url!</p>
+
+{% if id == 67 %}
+
+<h2>OMG are you still doing 67? that was so 20 showers ago</h2>
+<img src="/static/images/judgingcat.jpg" alt="how dare you 67"> 
+<img src="/static/images/dissapointedcat.jpg" alt="sigh"> 
+
+{%endif%}
+
+{% endblock %}
