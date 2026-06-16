@@ -4,6 +4,8 @@
 
     <h1>{{ cat.name }}'s profile!</h1>
 
-    <p>{{ cats.name }} is sigma and has id: {{ cats.id }}</p>
+    <img src="/static/images/{{ cat.image }}" alt="Picture of {{ cat.name }}">
+
+    <p>{{ cat.name }} is sigma and has id: {{ cat.id }}</p>
 
 {% endblock %}

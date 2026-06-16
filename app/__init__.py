@@ -12,20 +12,44 @@ app = Flask(__name__)
 cats = [
     {
         "id": 13,
-        "name": "Bingus"
+        "name": "Bingus",
+        "image": "bingusprofile.jpg"
     },
     {
         "id": 67,
-        "name": "Floppa"
+        "name": "Floppa",
+        "image": "floppaprofile.jpg"
     },
     {
         "id": 420,
-        "name": "Jinx "
+        "name": "Jinx ",
+        "image": "jinx.jpg"
     },
     {
         "id": 279,
-        "name": "Sogga"
+        "name": "Sogga",
+        "image": "sogga.jpg"
     },
+    {
+        "id": 69,
+        "name": "Rigby",
+        "image": "rigby.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Walter",
+        "image": "walter.jpg"
+    },
+    {
+        "id": 500,
+        "name": "Dave the Magical Cheese Wizard",
+        "image": "dave.jpg"
+    },
+    {
+        "id": 367,
+        "name": "Kevin",
+        "image": "kevin.jpg"
+    }
 ]
 
 def get_cat(id):
@@ -74,7 +98,7 @@ def show_a_cat(id):
     cat = get_cat(id)
 
     if cat:
-        return render_template("pages/cats.jinja", cat=cat)
+        return render_template("pages/cat.jinja", cat=cat)
     else:
         abort(404)
 
